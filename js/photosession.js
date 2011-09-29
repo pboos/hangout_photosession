@@ -7,7 +7,7 @@ var currentImage_ = null;
  * Functions
  */
 function onNewImage(image) {
-  $("#picture").css("background", "url("+image+")");
+  $("#picture").css("background", "url("+image+") no-repeat");
 }
 
 var onStateChange = function(adds, removes, state, metadata) {
