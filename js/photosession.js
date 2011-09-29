@@ -22,6 +22,7 @@ function publishNewImage(image) {
 
 gapi.hangout.addApiReadyListener(function(){
   gapi.hangout.data.addStateChangeListener(onStateChange);
+  onNewImage(getState()["image"]);
 });
 
 $(document).ready(function(){
