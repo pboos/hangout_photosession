@@ -10,19 +10,20 @@ function onNewImage(image) {
   $("#picture").attr("src", image);
 }
 
-var onStateChange = function(key, value, timestamp, timediff) {
-  alert("state change: " + key + " is now " + value);
-  if (key == "image") {
-  	onNewImage(value);
-  }
+var onStateChange = function(adds, removes, state, metadata) {
+  alert("state now " + state);
+  onNewImage(state["image"]);
 };
-gapi.hangout.data.addStateChangeListener(onStateChange);
 
 function publishNewImage(image) {
   var data = {};
   data["image"] = image;
   gapi.hangout.data.submitDelta(data);
 }
+
+gapi.hangout.addApiReadyListener(function(){
+  gapi.hangout.data.addStateChangeListener(onStateChange);
+});
 
 $(document).ready(function(){
   $("#url").keypress(function(event) {
