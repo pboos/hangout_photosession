@@ -11,6 +11,7 @@ function onNewImage(image) {
 }
 
 var onStateChange = function(key, value, timestamp, timediff) {
+  alert("state change: " + key + " is now " + value);
   if (key == "image") {
   	onNewImage(value);
   }
