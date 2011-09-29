@@ -15,7 +15,7 @@
 
       <div id="main">
         <input id="url" type="text" name="url" /><br />
-        <img id="picture" alt="Photo Session Image" />
+        <div id="picture" />
       </div>
     ]]>
   </Content>
