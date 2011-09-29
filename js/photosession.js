@@ -27,7 +27,8 @@ $(document).ready(function(){
   $("#url").keypress(function(event) {
     if ( event.which == 13 ) {
        event.preventDefault();
-       onNewImage($(this).attr("value"));
+       var newImageUrl = $(this).attr("value");
+       publishNewImage(newImageUrl)
        $(this).attr("value", "");
      }
   });
