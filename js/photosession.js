@@ -15,7 +15,7 @@ var onStateChange = function(key, value, timestamp, timediff) {
   	onNewImage(value);
   }
 };
-gapi.hangout.addStateChangeListener(onStateChange);
+gapi.hangout.data.addStateChangeListener(onStateChange);
 
 function publishNewImage(image) {
   var data = {};
