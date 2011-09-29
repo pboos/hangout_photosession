@@ -15,7 +15,7 @@
 
       <div id="main">
         <input id="url" type="text" name="url" /><br />
-        <img id="picture" src="http://opmecurrent.s3.amazonaws.com/custom/201109/1315481294-IMG_20110908_180738_700x960.jpg" alt="Photo Session Image" />
+        <img id="picture" alt="Photo Session Image" />
       </div>
     ]]>
   </Content>
