@@ -11,7 +11,6 @@ function onNewImage(image) {
 }
 
 var onStateChange = function(adds, removes, state, metadata) {
-  alert("state now " + state);
   onNewImage(state["image"]);
 };
 
