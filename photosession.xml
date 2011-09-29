@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Photo Session">
+    <Require feature="rpc"/>
+    <Require feature="views"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+      <script type="text/javascript" src="//www.google.com/jsapi"></script>
+      <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+      <script src="//hangoutsapi.appspot.com/static/hangout.js"></script>
+      <!-- Your application code -->
+      <script type="text/javascript" src="https://github.com/pboos/hangout_photosession/raw/master/js/photosession.js"></script>
+      <img id="picture" width="100%" src="http://opmecurrent.s3.amazonaws.com/custom/201109/1315481294-IMG_20110908_180738_700x960.jpg" alt="Photo Session Image" />
+      <input id="url" type="text" name="url" />
+    ]]>
+  </Content>
+</Module>
