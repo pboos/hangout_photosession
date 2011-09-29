@@ -11,8 +11,9 @@
       <script src="//hangoutsapi.appspot.com/static/hangout.js"></script>
       <!-- Your application code -->
       <script type="text/javascript" src="https://github.com/pboos/hangout_photosession/raw/master/js/photosession.js"></script>
-      <img id="picture" width="100%" src="http://opmecurrent.s3.amazonaws.com/custom/201109/1315481294-IMG_20110908_180738_700x960.jpg" alt="Photo Session Image" />
+
       <input id="url" type="text" name="url" />
+      <img id="picture" width="100%" src="http://opmecurrent.s3.amazonaws.com/custom/201109/1315481294-IMG_20110908_180738_700x960.jpg" alt="Photo Session Image" />
     ]]>
   </Content>
 </Module>
